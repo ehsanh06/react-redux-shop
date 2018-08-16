@@ -1,0 +1,87 @@
+export default [{
+        id: "1",
+        categoryId: "2",
+        name: "Mega Man 2",
+        description: "Mega Man 2, known in Japan as Rockman 2: The Mystery of Dr. Wily, is an action game developed and published by Capcom for the Nintendo Entertainment System. It was released in Japan in 1988 and in North America and PAL regions the following years. Mega Man 2 continues Mega Man's battle against the evil Dr. Wily and his rogue robots. The game features graphical and gameplay changes from the first Mega Man game, many of which have remained throughout the series.",
+        price: 28,
+        image: "/assets/uploads/220px-Megaman2_box.jpg",
+        platform: 'NES/Famicom',
+        release: 'December 24, 1988',
+        genre: 'Action, Platform',
+        players: 'Single-player',
+        developers: 'Capcom',
+        series: 'Mega Man, Rockman'
+    },
+    {
+        id: "2",
+        categoryId: "4",
+        name: "Batman NES",
+        description: "Batman, also known as Batman: The Video Game, is a group of platform games developed by Sunsoft for the Nintendo Entertainment System and Game Boy, loosely based on the 1989 film of the same name. Despite having the same title, each is actually a different game.",
+        price: 20,
+        image: "/assets/uploads/batman-NES-box-art.jpg",
+        platform: 'NES, Game Boy',
+        release: 'December 22, 1989',
+        genre: 'Action, Platform',
+        players: 'Single-player',
+        developers: 'Sunsoft',
+        series: 'Batman'
+
+    },
+    {
+        id: "3",
+        categoryId: "3",
+        name: "Contra/Probotector",
+        description: "Contra, distributed as Gryzor in Europe and Oceania, is a 1987 run and gun action game developed and published by Konami originally released as a coin-operated arcade game on February 20, 1987. A home version was released for the Nintendo Entertainment System in 1988, along with ports for various computer formats, including the MSX2. The home versions were localized in the PAL region as Gryzor on the various computer formats and as Probotector on the NES, released later. Several Contra sequels were produced following the original game.",
+        price: 30,
+        image: "/assets/uploads/Contra_cover.jpg",
+        platform: 'NES/Famicom, Arcade, PlayChoice-10, MSX2, ZX Spectrum, Amstrad CPC, Commodore 64, Microsoft Windows, MS-DOS',
+        release: 'February 20, 1987',
+        genre: 'Run and Gun, Action',
+        players: 'Single-player, cooperative',
+        developers: 'Konami',
+        series: 'Contra (NTSC/J), Probotector (PAL)'
+    },
+    {
+        id: "4",
+        categoryId: "1",
+        name: "Metroid",
+        description: "Metroid is an action-adventure video game developed and published by Nintendo. The first installment in the Metroid series, it was originally released in Japan for the Famicom Disk System peripheral in August 1986. North America received a release in August 1987 on the Nintendo Entertainment System in a ROM cartridge format, with the European release following in January 1988",
+        price: 60,
+        image: "/assets/uploads/Metroid_boxart.jpg",
+        platform: 'NES/Famicom, Game Boy Advance',
+        release: 'August 6, 1986',
+        genre: 'Action-adventure',
+        players: 'Single-player',
+        developers: 'Nintendo R&D1, Intelligent Systems',
+        series: 'Metroid'
+    },
+    {
+        id: "5",
+        categoryId: "1",
+        name: "The Legend of Zelda",
+        description: "The Legend of Zelda is an action-adventure video game developed and published by Nintendo and designed by Shigeru Miyamoto and Takashi Tezuka. Set in the fantasy land of Hyrule, the plot centers on a boy named Link, the playable protagonist, who aims to collect the eight fragments of the Triforce of Wisdom in order to rescue Princess Zelda from the antagonist, Ganon.",
+        price: 40,
+        image: "/assets/uploads/zelda_boxart.jpg",
+        platform: 'NES/Famicom',
+        release: 'February 21, 1986',
+        genre: 'Action-adventure',
+        players: 'Single-player',
+        developers: 'Nintendo EAD (formerly Nintendo Research & Development 4)',
+        series: 'The Legend of Zelda'
+    },
+    {
+        id: "6",
+        categoryId: "1",
+        name: "Zelda II",
+        description: "Zelda II: The Adventure of Link is an action role-playing video game with platforming elements. The second installment in The Legend of Zelda series, it was developed and published by Nintendo for the Family Computer Disk System on January 14, 1987, less than a year after the original The Legend of Zelda was released and seven months before North America saw the release of the first Zelda title. The game was released in North America and the PAL region for the Nintendo Entertainment System in late 1988, almost two years after its initial release in Japan.",
+        price: 30,
+        image: "/assets/uploads/zelda2_boxart.jpg",
+        platform: 'NES/Famicom',
+        release: 'January 14, 1987',
+        genre: 'Action role-playing',
+        players: 'Single-player',
+        developers: 'Nintendo EAD (formerly Nintendo Research & Development 4)',
+        series: 'The Legend of Zelda'
+
+    }
+]
