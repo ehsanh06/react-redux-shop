@@ -21,11 +21,9 @@ const store = createStore(reducers, composeWithDevTools(
 
 const history = syncHistoryWithStore(browserHistory, store);
 
-
-
 ReactDOM.render(
     <Provider store={store}>
-        <Router history={history}>
+        <Router history={history} basename={process.env.PUBLIC_URL}>
             <Route component={Layout}>
                 <Route path='/' component={Games} />
                 <Route path='/categories/:id' component={Games} />
