@@ -19,7 +19,7 @@
     "react-scripts": "0.9.5",
     "gh-pages": "^1.2.0"
   },
-  "homepage": "http://ehsanh06.github.io/react-redux-shop",
+  "homepage": "http://www.ehsanhussain.com/react-redux-shop",
   "scripts": {
     "deploy": "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
