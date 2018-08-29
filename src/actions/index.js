@@ -35,9 +35,8 @@ export const fetchGames = () => async dispatch => {
 
 export const loadMoreGames = () => async (dispatch, getState) => {
     const offset = getRenderedGamesLength(getState());
-    dispatch({
-        type: LOAD_MORE_GAMES_START
-    });
+
+    dispatch({ type: LOAD_MORE_GAMES_START });
 
     try {
         const games = await loadMoreGamesApi({offset});
@@ -88,10 +87,10 @@ export const searchGame = (text) => dispatch => {
 }
 
 export const fetchCategories = () => async dispatch => {
-    try {
-        dispatch({type: FETCH_CATEGORIES_START});
-        const categories = await fetchCategoriesApi();
+    dispatch({type: FETCH_CATEGORIES_START});
 
+    try {
+        const categories = await fetchCategoriesApi();
         dispatch({
             type: FETCH_CATEGORIES_SUCCESS,
             payload: categories

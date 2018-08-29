@@ -25,6 +25,7 @@ class Game extends Component {
                 'series'
             ])
         )(game);
+        
         return columnFields.map(([key, value]) => (
             <div className='column' key={key}>
                 <div className='ab-details-title'>

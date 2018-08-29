@@ -13,7 +13,7 @@ const BasketCart = ({totalBasketCount, totalPrice}) => (
                 className='btn btn-inverse btn-block btn-lg'
             >
                 <i className='fa fa-fa-shopping-cart'></i>
-                <span>{totalBasketCount} items(s) - ${totalPrice}</span>
+                <span>{totalBasketCount} items(s) - £{totalPrice}</span>
             </Link>
         </div>
     </div>

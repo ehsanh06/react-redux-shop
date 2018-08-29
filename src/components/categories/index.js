@@ -2,8 +2,8 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Link, withRouter} from 'react-router';
 import {compose} from 'redux';
-import classNames from 'classnames';
 import R from 'ramda';
+import classNames from 'classnames';
 
 import { getCategories, getActiveCategoryId } from '../../selectors';
 
@@ -58,4 +58,4 @@ const mapStateToProps = (state, ownProps) => ({
     activeCategoryId: getActiveCategoryId(ownProps)
 });
 
-export default compose(withRouter, connect(mapStateToProps))(Categories);
+export default compose(withRouter, connect(mapStateToProps, null))(Categories);

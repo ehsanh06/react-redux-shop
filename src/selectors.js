@@ -1,13 +1,12 @@
 import R from 'ramda';
 
 export const getGameById = (state, id) => R.prop(id, state.games);
-export const getActiveCategoryId = ownProps => R.path(['params', 'id'], ownProps);
 
 export const getGames = (state, ownProps) => {
-    
-    const activeCategoryId = getActiveCategoryId(ownProps); 
+
+    const activeCategoryId = getActiveCategoryId(ownProps);
     const applyCategory = item => R.equals(
-        activeCategoryId, 
+        activeCategoryId,
         R.prop('categoryId', item)
     );
 
@@ -15,7 +14,7 @@ export const getGames = (state, ownProps) => {
         state.gamesPage.search,
         R.prop('name', item)
     );
-    
+
     const games = R.compose(
         R.filter(applySearch),
         R.when(R.always(activeCategoryId), R.filter(applyCategory)),
@@ -40,16 +39,20 @@ export const getTotalBasketPrice = (state) => {
 
 export const getCategories = state => R.values(state.categories);
 
+export const getActiveCategoryId = ownProps => R.path(['params', 'id'], ownProps);
+
 export const getBasketGamesWithCount = state => {
-    const uniqueIds = R.uniq(state.basket);
     const gameCount = id => R.compose(
         R.length,
         R.filter(basketId => R.equals(id, basketId))
     )(state.basket);
+    
     const gameWithCount = game => R.assoc('count', gameCount(game.id), game);
+    
+    const uniqueIds = R.uniq(state.basket);
     const games = R.compose(
         R.map(gameWithCount),
-        R.map(id => getGameById(state, id))        
+        R.map(id => getGameById(state, id))
     )(uniqueIds);
 
     return games;
